@@ -87,4 +87,4 @@ rm("activity_labels", "features", "subject_train", "subject_test", "test_data", 
 
 #output the tidy data sets in a csv format for sharing
 write.table(clean_data, file="UCI_cleaned_data.txt", sep = " ")
-write.table(Tidy_data_final, file="UCI_tidy_mean_data.txt", sep = " ")
+write.table(Tidy_data_final, file="UCI_tidy_mean_data.txt", sep = " ", row.name=FALSE)
